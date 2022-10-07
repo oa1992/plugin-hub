@@ -27,6 +27,7 @@ There are two methods to create an external plugin, you can either:
  4. Open IntelliJ and choose *Get from Version Control*. Paste the link you just copied in the URL field and where you want to save it in the second field.
 
  5. In order to make sure everything works correctly, try to start the client with your external plugin enabled by running the test. The test requires `-ea` to be added to your VM options to enable assertions, which can be found in IntellIJ in `Run/Debug Configurations` under `Modify options`, `Add VM options`, and then adding `-ea` into the input field which appears.
+ 5a. When you go to Run/Debug Configurations, ensure that you create a new Application. Name it whatever you like. Ensure that you are running java 11. Click Modify options and check `Add VM options`. Now you can add `-ea` to VM options and for `Choose Main Class`, click `Project` and go down to the test case under `src/test/java/com.example/ExamplePluginTest`.
 
  ![run-test](https://i.imgur.com/tKSQH5e.png)
 
